@@ -13,9 +13,7 @@
 
 	<groupId>ch.unibas.biozentrum.imcf</groupId>
 	<artifactId>jython-olefile</artifactId>
-	<!-->
-	<version>0.43.99-SNAPSHOT</version>
-	<-->
+	<version>0.44.0-SNAPSHOT</version>
 
 	<name>jython-olefile</name>
 	<description>Python library for reading OLE2 files.</description>
@@ -32,6 +30,22 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<build>
+		<!-- Tell maven where to find the files to be packaged. Since the code
+		to be packaged is not mavenized itself but this is rather re-packaging
+		of non-Java code (hence not following the project layout conventions) we
+		need to do this explicitly. -->
+		<resources>
+			<resource>
+				<directory>upstream</directory>
+				<includes>
+					<include>olefile/**.py</include>
+					<include>**/LICENSE.txt</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
 
 	<developers>
 		<developer>
