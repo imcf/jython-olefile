@@ -5,33 +5,33 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>net.imagej</groupId>
-		<artifactId>pom-imagej</artifactId>
-		<version>16.6.0</version>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>23.2.0</version>
 		<relativePath />
 	</parent>
 
-	<groupId>info.decalage</groupId>
+	<groupId>ch.unibas.biozentrum.imcf</groupId>
 	<artifactId>jython-olefile</artifactId>
+	<!-->
 	<version>0.43.99-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<-->
 
 	<name>jython-olefile</name>
-	<description>Python library for reading OLE2 files (packaged for Jython).</description>
+	<description>Python library for reading OLE2 files.</description>
 	<url>https://github.com/decalage2/olefile</url>
-
-	<build>
-		<plugins>
-			<!-- Do not generate a source jar -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<configuration>
-					<skipSource>true</skipSource>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+	<inceptionYear>2005</inceptionYear>
+	<organization>
+		<name>Philippe Lagadec</name>
+		<url>https://www.decalage.info/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>olefile License</name>
+			<url>https://olefile.readthedocs.io/en/latest/License.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<developers>
 		<developer>
@@ -52,19 +52,48 @@
 			<roles>
 				<role>developer</role>
 				<role>debugger</role>
+				<!-->
 				<role>packager</role>
+				<-->
 			</roles>
 		</developer>
 	</developers>
 	<contributors>
+		<!--
+		NB: Need at least one element to override the parent.
+		See: https://issues.apache.org/jira/browse/MNG-5220
+		-->
+		<contributor>
+			<name>None</name>
+		</contributor>
 	</contributors>
 
 	<mailingLists>
 		<mailingList>
-			<name>Scientific Image Community Forum</name>
-			<archive>http://forum.image.sc/</archive>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
 		</mailingList>
 	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imcf/jython-olefile</connection>
+		<developerConnection>scm:git:git@github.com:imcf/jython-olefile</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imcf/jython-olefile</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imcf/jython-olefile/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<properties>
+		<license.licenseName>olefile</license.licenseName>
+		<license.copyrightOwners>Philippe Lagadec</license.copyrightOwners>
+		<maven.source.skip>true</maven.source.skip>
+	</properties>
 
 	<repositories>
 		<repository>
@@ -73,11 +102,11 @@
 		</repository>
 	</repositories>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 </project>
