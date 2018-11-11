@@ -40,6 +40,7 @@
 				<includes>
 					<include>olefile/**.py</include>
 					<include>**/LICENSE.txt</include>
+					<include>**/CONTRIBUTORS.txt</include>
 				</includes>
 			</resource>
 		</resources>
