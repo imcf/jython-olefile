@@ -1,12 +1,13 @@
-# olefile for ImageJ / Jython
+# `olefile` for ImageJ / Jython :coffee: :snake: :microscope:
 
 A mavenized package of [Philippe Lagadec][gh_decalage2]'s
 [`olefile`][gh_olefile] Python module to be used in [ImageJ][imagej].
 
 ## Packaging
 
-This repo is a fork of [Michael Entrup][gh_m-entrup]'s
-[imagej-jython-package][gh_ij_jy] for packaging Python modules with maven.
+The `pom.xml` is inspired by the [imagej-jython-package][gh_ij_jy] repository
+from [Michael Entrup][gh_m-entrup] with adaptations to make it work with the
+original structure of the upstream `olefile` package.
 
 
 [gh_decalage2]: https://github.com/decalage2
