@@ -1,2 +1,10 @@
+# VS Code stuff
+*.code-workspace
+.vscode/
+
+# maven / release generated files
 target/
 pom.xml.releaseBackup
+
+# bytecode created when importing directly in Jython:
+*py.class
