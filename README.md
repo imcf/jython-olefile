@@ -25,9 +25,9 @@ print conv
 
 ## Packaging
 
-The `pom.xml` is inspired by the [imagej-jython-package][gh_ij_jy] repository
-from [Michael Entrup][gh_m-entrup] with adaptations to make it work with the
-original structure of the upstream `olefile` package.
+The `pom.xml` is based on the [imagej-jython-package][gh_ij_jy] repository from
+[Michael Entrup][gh_m-entrup] with adaptations to make it work with the original
+structure of the upstream `olefile` package.
 
 
 [gh_decalage2]: https://github.com/decalage2
