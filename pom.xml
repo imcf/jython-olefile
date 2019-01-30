@@ -99,13 +99,17 @@
 		<url>https://github.com/imcf/jython-olefile/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>None</system>
+		<system>Travis CI</system>
+		<url>https://travis-ci.com/imcf/jython-olefile</url>
 	</ciManagement>
 
 	<properties>
 		<license.licenseName>olefile</license.licenseName>
 		<license.copyrightOwners>Philippe Lagadec</license.copyrightOwners>
 		<maven.source.skip>true</maven.source.skip>
+
+		<!-- NB: Deploy releases to the ImageJ Maven repository. -->
+		<releaseProfiles>deploy-to-imagej</releaseProfiles>
 	</properties>
 
 	<repositories>
