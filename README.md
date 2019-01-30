@@ -1,5 +1,7 @@
 # `olefile` for ImageJ / Jython :coffee: :snake: :microscope:
 
+[![Travis CI](https://travis-ci.com/imcf/jython-olefile.svg?branch=master)](https://travis-ci.com/imcf/jython-olefile)
+
 A mavenized package of [Philippe Lagadec][gh_decalage2]'s
 [`olefile`][gh_olefile] Python module to be used in [ImageJ][imagej].
 
