@@ -7,7 +7,7 @@ branches:
 
 # workaround for Travis not being allowed to clone submodules via SSH:
 git:
-  - submodules: false
+  submodules: false
 before_install:
   - sed -i 's!git@github.com:!https://github.com/!' .gitmodules
   - git submodule update --init --recursive
