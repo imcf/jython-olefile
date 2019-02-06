@@ -11,7 +11,7 @@
 
 	<groupId>ch.unibas.biozentrum.imcf</groupId>
 	<artifactId>jython-olefile</artifactId>
-	<version>0.46.1-SNAPSHOT</version>
+	<version>0.46.1</version>
 
 	<name>jython-olefile</name>
 	<description>Python library for reading OLE2 files.</description>
@@ -91,7 +91,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/imcf/jython-olefile</connection>
 		<developerConnection>scm:git:git@github.com:imcf/jython-olefile</developerConnection>
-		<tag>HEAD</tag>
+		<tag>jython-olefile-0.46.1</tag>
 		<url>https://github.com/imcf/jython-olefile</url>
 	</scm>
 	<issueManagement>
