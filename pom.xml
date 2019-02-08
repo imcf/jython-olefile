@@ -30,6 +30,32 @@
 	</licenses>
 
 	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<executions>
+					<execution>
+						<id>git submodule update</id>
+						<phase>initialize</phase>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<configuration>
+							<executable>git</executable>
+							<arguments>
+								<argument>submodule</argument>
+								<argument>update</argument>
+								<argument>--init</argument>
+								<argument>--recursive</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
 		<!-- Tell maven where to find the files to be packaged. Since the code
 		to be packaged is not mavenized itself but this is rather re-packaging
 		of non-Java code (hence not following the project layout conventions) we
