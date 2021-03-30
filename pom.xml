@@ -11,7 +11,7 @@
 
 	<groupId>ch.unibas.biozentrum.imcf</groupId>
 	<artifactId>jython-olefile</artifactId>
-	<version>0.46.3-SNAPSHOT</version>
+	<version>0.46.4-SNAPSHOT</version>
 
 	<name>jython-olefile</name>
 	<description>Python library for reading OLE2 files.</description>
